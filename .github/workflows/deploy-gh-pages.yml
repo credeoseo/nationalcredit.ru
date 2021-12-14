@@ -32,7 +32,7 @@ jobs:
           WEB_PATH_PREFIX: /
           WEB_ROOT_URL: https://nationalcredit.ru
           PATH_TO_CONTENT: "../content"
-          CONTENT_REP_FOLDERS: "data, theme, privacy, index, contacts, about-us, img, products, CNAME"
+          CONTENT_REP_FOLDERS: "data, theme, privacy, index, contacts, about-us, img, products, CNAME, irkutsk"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
