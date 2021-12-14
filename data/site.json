@@ -1,0 +1,16 @@
+{
+    "name": "Национальный Кредит",
+    "logoUrl": "/img/logo.png",
+    "faviconUrl": "/img/favicon.png",
+    "department": "MSK",
+    "wmid": "18245",
+    "city": "Улан-Удэ",
+    "api": "https://dev3.credeo.ru/v1/lead/new-guest",
+    "credeoApi": true,
+	"cityList": [
+		{
+			"city": "Иркутск",
+			"cityPath": "/irkutsk/"
+		}
+	]
+}
