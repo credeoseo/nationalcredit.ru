@@ -1,0 +1,41 @@
+name: Publish to GitHub Pages
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Загрузка сборки
+        uses: actions/checkout@v2
+        with:
+          repository: credeoseo/engine
+      - name: Загрузка контента
+        uses: actions/checkout@v2
+        with:
+          path: content
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.17.x'
+
+      - run: yarn install
+      - name: Build Eleventy
+        run: |
+          node links.js --default
+          yarn build
+        env:
+          WEB_PATH_PREFIX: /
+          WEB_ROOT_URL: https://nationalcredit.ru
+          PATH_TO_CONTENT: "../content"
+          CONTENT_REP_FOLDERS: "data, theme, privacy, index, contacts, about-us, img, products, CNAME"
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./_site
