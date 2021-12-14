@@ -1,0 +1,378 @@
+
+	
+	
+	
+	
+	
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакты компании - Национальный Кредит</title>
+	<meta name="description" content="На этой странице есть, контакты компании такие как, номер телефон, whatsapp и адрес, а так же форма заказа звонка">
+	<link rel="canonical" href="https://nationalcredit.ru/contacts/">
+    <meta name="keywords" content="">
+	<link rel="icon" type="image/png" href="/img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+	<script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="grid min-h-screen grid-cols-[100%] grid-rows-[auto,1fr,auto]">
+	<header id="header" class="sticky top-0 z-10 w-full bg-gradient-to-b from-white via-white" x-data="{ openMenu: false }">
+	<div class="container py-5 mx-auto">
+		<div class="relative grid items-center grid-cols-2 lg:grid-cols-3 lg:w-4/5 xl:w-3/5 lg:mx-auto">
+			<ul class="items-center hidden space-x-4 lg:flex whitespace-nowrap">
+				
+				<li>
+					<a href="/contacts" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+						Контакты
+					</a>
+				</li>
+				
+				<li>
+					<a href="/about-us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+						О нас
+					</a>
+				</li>
+				
+				
+				<li class="relative" x-data="{ openCityList: false }">
+					<button class="text-gray-700 flex items-center font-medium hover:text-themes-default" @click="openCityList = !openCityList">
+						<span>Улан-Удэ</span>
+						<svg class="h-2 w-2 ml-1" viewBox="0 0 8 8" fill="none"><path d="M1.47 2.33h5.06a.5.5 0 0 1 .37.84L4.37 5.93a.5.5 0 0 1-.74 0L1.1 3.17a.5.5 0 0 1 .37-.84Z" fill="currentColor"/></svg>
+					</button>
+					<ul class="absolute top-full left-1/2 -translate-x-1/2 bg-white shadow-lg p-2 opacity-0 invisible"
+						:class="{ 'opacity-0 invisible': !openCityList }"
+					>
+						
+						
+						
+						<li>
+							<a href="/irkutsk/" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+								Иркутск
+							</a>
+						</li>
+						
+						
+					</ul>
+				</li>
+				
+			</ul>
+			<a href="/" aria-label="Национальный Кредит" title="Национальный Кредит" class="inline-flex items-center lg:mx-auto">
+				<img class="object-contain h-20 lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/logo.png" Alt="Национальный Кредит">
+				
+			</a>
+			
+			<ul class="items-center hidden ml-auto space-x-8 lg:flex">
+				<li>
+					<a href="tel:83012584584" rel="noopener noreferrer" aria-label="83012584584" title="83012584584" class="inline-flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+						83012584584
+					</a>
+				</li>
+				<li>
+				<a
+					href="https://wa.me/79244584584"
+					class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-themes-default hover:bg-themes-second focus:shadow-outline focus:outline-none"
+					aria-label="79244584584"
+					title="79244584584"
+				>
+					<svg class="mr-2 h-7 w-7">
+						<use xlink:href="/images/icons.svg#whatsapp"></use>
+					</svg>
+					<span>WhatsApp</span>
+				</a>
+				</li>
+			</ul>
+
+			<div class="ml-auto lg:hidden">
+				<button
+					x-on:click="openMenu = !openMenu"
+					aria-label="Open Menu"
+					title="Open Menu"
+					class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-purple-50 focus:bg-purple-50">
+					<svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+						<path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+						<path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+					</svg>
+				</button>
+				<div class="absolute top-0 left-0 w-full" x-show="openMenu" x-transition style="display: none;">
+					<div class="p-5 bg-white border rounded shadow-sm">
+						<div class="flex items-center justify-between mb-4">
+						<div>
+							<a href="/" aria-label="Национальный Кредит" title="Национальный Кредит" class="inline-flex items-center">
+							<img class="object-contain h-20 lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/logo.png" Alt="Национальный Кредит">
+							
+							</a>
+						</div>
+						<div>
+							<button
+								x-on:click="openMenu = !openMenu"
+								aria-label="Close Menu"
+								title="Close Menu"
+								class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+								<svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+									<path
+									fill="currentColor"
+									d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+									></path>
+								</svg>
+							</button>
+						</div>
+						</div>
+						<nav>
+						<ul class="space-y-4">
+							
+							<li>
+								<a href="/contacts" aria-label="Контакты" title="Контакты" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">Контакты</a>
+							</li>
+							
+							<li>
+								<a href="/about-us" aria-label="О нас" title="О нас" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">О нас</a>
+							</li>
+							
+							<li>
+								<a href="tel:83012584584" rel="noopener noreferrer" aria-label="83012584584" title="83012584584" class="inline-flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+									83012584584
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://wa.me/79244584584"
+									class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-themes-default hover:bg-themes-second focus:shadow-outline focus:outline-none"
+									aria-label="79244584584"
+									title="79244584584"
+								>
+									<svg class="mr-2 h-7 w-7">
+										<use xlink:href="/images/icons.svg#whatsapp"></use>
+									</svg>
+									<span>WhatsApp</span>
+								</a>
+							</li>
+							
+							<li class="relative" x-data="{ openCityList: false }">
+								<button class="text-gray-700 flex items-center font-medium hover:text-themes-default" @click="openCityList = !openCityList">
+									<span>Улан-Удэ</span>
+									<svg class="h-2 w-2 ml-1" viewBox="0 0 8 8" fill="none"><path d="M1.47 2.33h5.06a.5.5 0 0 1 .37.84L4.37 5.93a.5.5 0 0 1-.74 0L1.1 3.17a.5.5 0 0 1 .37-.84Z" fill="currentColor"/></svg>
+								</button>
+								<ul class="absolute top-full left-0 bg-white shadow-lg p-2 opacity-0 invisible"
+									:class="{ 'opacity-0 invisible': !openCityList }"
+								>
+									
+									
+									
+									<li>
+										<a href="/irkutsk/" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+											Иркутск
+										</a>
+									</li>
+									
+									
+								</ul>
+							</li>
+							
+						</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<main class="">
+		<section>
+	<div class="container mx-auto">
+		<div class="p-4 mx-auto font-medium prose bg-gray-100 rounded-xl max-w-none lg:w-4/5 xl:w-3/5 lg:mx-auto">
+			<h1>Контакты</h1>
+<ul>
+<li>
+<p>Наш номер телефона <a href="tel:83012584584">83012584584</a></p>
+</li>
+<li>
+<p>Наш <a href="https://wa.me/79244584584">WhatsApp</a></p>
+</li>
+<li>
+<p>Наш адрес <a href="https://2gis.ru/ulanude/search/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D1%83%D0%BB%D0%B0%D0%BD%20%D1%83%D0%B4%D1%8D/firm/70000001006428869/107.623877%2C51.809172?m=107.623837%2C51.809189%2F16.38">г. Улан-Удэ, ул. Сахьяновой, д. 9</a></p>
+</li>
+</ul>
+
+		</div>
+	</div>
+</section>
+
+
+	<section class="relative text-gray-600 body-font">
+	<form x-ref="form" action="https://dev3.credeo.ru/v1/lead/new-guest" method="post" class="container py-10 mx-auto" x-data="contactForm()" @submit.prevent="submitData">
+		<div class="flex flex-col w-full text-center">
+			<h2 class="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">Обратный <span class="text-themes-default">звонок</span></h2>
+		</div>
+		<div class="mx-auto lg:w-1/2 md:w-2/3">
+			<div class="grid">
+				<div class="relative grid sm:grid-cols-2">
+					<div class="p-2">
+						<div class="relative">
+							<label for="name" class="text-sm leading-7 text-gray-600">Имя</label>
+							<input
+							type="text"
+							
+							x-model="formData.name"
+							
+							class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-themes-default focus:bg-white focus:ring-2 focus:ring-indigo-200">
+						</div>
+					</div>
+					<div class="p-2">
+						<div class="relative">
+							<label for="email" class="text-sm leading-7 text-gray-600">Телефон</label>
+							<input
+								type="tel"
+								pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+								
+								x-model="formData.phone"
+								
+								class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-themes-default focus:bg-white focus:ring-2 focus:ring-indigo-200">
+						</div>
+					</div>
+					<div class="absolute inset-0 flex items-center justify-center text-center bg-white" x-show="showMessage" x-transition style="display: non;">
+						<p x-html="message"></p>
+					</div>
+				</div>
+				<div class="w-full p-2">
+					<button
+						x-text="buttonLabel"
+						:disabled="loading"
+						class="flex px-8 py-2 mx-auto text-lg text-white transition-colors border-0 rounded bg-themes-default focus:outline-none hover:bg-themes-second"
+					>Отправить</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>
+
+
+
+	</main>
+	<footer class="container pt-16 mx-auto">
+	<div class="grid gap-10 row-gap-6 mb-8 lg:w-4/5 xl:w-3/5 lg:mx-auto">
+		<div class="">
+			<a href="/" aria-label="На главную" title="Национальный Кредит" class="inline-flex items-center">
+				<img class="object-contain h-20 lozad" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/logo.png" Alt="Национальный Кредит">
+				
+			</a>
+			<div class="mt-6 space-y-4 text-sm text-gray-800">
+				<p>Сервис &quot;Национальный Кредит&quot; и ресурс https://www.nationalcredit.ru (далее - Сайт) не является финансовым учреждением, МФО, банком, ломбардом и оказывают содействие в подборе финансовых услуг партнеров сервиса.
+Обращаем ваше внимание, что информация, размещенная на сайте, носит информационный характер
+и не является публичной офертой согласно ст. 437 ГК РФ. Конкретные условия определяются при заключении договора с партнером сервиса, уточняйте
+и изучайте конечные условия при прямом общении с партнерами сервиса.</p>
+<p>Сервис &quot;Национальный Кредит&quot; размещает на сайте https://www.nationalcredit.ru предложение о подборе финансовых продуктов. Сервис, Сайт и ООО &quot;ОРС” не оказывают финансовых услуг и не могут отвечать за качество услуг оказываемых партнерами сервиса, а также не несут ответственность за убытки, которые могут возникнуть в результате отношений Потребителя услуг Сайта и партнерами сервиса.</p>
+<p>Сайт размещает информацию по финансовой тематике в том объеме, в котором её предоставили партнеры сервиса.</p>
+<p>ООО &quot;ОРС” исходит из того, что партнеры сервиса предоставляют гарантию на оказываемые услуги своим клиентам и гарантируют качество и добросовестность их предоставления.</p>
+<p>Сервис предоставлен ООО &quot;ОРС”</p>
+<p>ИНН 7718779019</p>
+
+			</div>
+		</div>
+		<div class="space-y-2 text-sm">
+			<p class="text-base font-bold tracking-wide text-gray-900">Контакты</p>
+			<div class="flex">
+				<p class="mr-1 text-gray-800">Телефон:</p>
+				<a href="tel:83012584584" aria-label="83012584584" title="83012584584" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">83012584584</a>
+			</div>
+			<div class="flex">
+				<p class="mr-1 text-gray-800">Email:</p>
+				<a href="mailto:info@nationalcredit.ru" aria-label="info@nationalcredit.ru" title="info@nationalcredit.ru" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@nationalcredit.ru</a>
+			</div>
+			<div class="flex">
+				<p class="mr-1 text-gray-800">Адрес:</p>
+				
+					
+					<a href="https://2gis.ru/ulanude/search/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D1%83%D0%BB%D0%B0%D0%BD%20%D1%83%D0%B4%D1%8D/firm/70000001006428869/107.623877%2C51.809172?m=107.623837%2C51.809189%2F16.38" target="_blank" rel="nofollow noopener noreferrer" aria-label="г. Улан-Удэ, ул. Сахьяновой, д. 9" title="г. Улан-Удэ, ул. Сахьяновой, д. 9" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+						г. Улан-Удэ, ул. Сахьяновой, д. 9
+					</a>
+					
+				
+			</div>
+		</div>
+		
+		</div>
+		<div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row lg:mx-auto lg:w-4/5 xl:w-3/5">
+			<p class="text-sm text-gray-600">
+				© Национальный Кредит - Все права защищены.
+			</p>
+			<ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+				<li>
+					<a href="/privacy" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Политика обработки персональных данных</a>
+				</li>
+			</ul>
+		</div>
+</footer>
+
+	<script src="/assets/main.js"></script>
+	<script>
+		function contactForm() {
+			return {
+				
+				formData: {
+					'broker_name': 'Национальный Кредит',
+					'name': '',
+					'phone': '',
+					'url': 'https://nationalcredit.ru/contacts/',
+					'city': 'Улан-Удэ',
+					'utm_source': "Национальный Кредит Улан-Удэ"
+				},
+				
+
+				message: '',
+				showMessage: false,
+				loading: false,
+				buttonLabel: 'Отправить',
+
+				submitData() {
+				this.buttonLabel = 'Отправка'
+				this.loading = true;
+				this.message = ''
+
+				fetch('https://dev3.credeo.ru/v1/lead/new-guest', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(this.formData)
+				})
+					.then(() => {
+						this.message = 'Форма отправлена, ожидайте!<br> С вами свяжутся'
+						this.$refs.form.reset()
+					})
+					.catch(() => {
+						this.message = 'Увы, но произошла ошибка попробуйте еще раз!'
+					})
+					.finally(() => {
+						this.showMessage = true,
+						this.loading = false;
+						this.buttonLabel = 'Отправлено'
+						setTimeout(() => {
+							this.buttonLabel = 'Отправить',
+							this.showMessage = false
+						}, 15000)
+					})
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	ym(86852439, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+	});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/86852439" style="position:absolute; left:-9999px;" alt="YM" /></div></noscript>
+</body>
+</html>
