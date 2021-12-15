@@ -262,7 +262,7 @@
 					</div>
 		
 				</div>
-				<form  x-ref="form" method="POST" action="https://dev3.credeo.ru/v1/lead/new-guest" @submit.prevent="submitData">
+				<form  x-ref="form" method="POST" action="https://credeo.ru/v1/lead/new-guest" @submit.prevent="submitData">
 					<div class="grid grid-rows-3 gap-2 2xs:gap-3.5 xl:gap-4.5">
 						<label class="relative grid group ">
 							<input
@@ -363,8 +363,8 @@
 				<a href="mailto:info@nationalcredit.ru" aria-label="info@nationalcredit.ru" title="info@nationalcredit.ru" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@nationalcredit.ru</a>
 			</div>
 			<div class="flex">
-				<p class="mr-1 text-gray-800">Адрес:</p>
 				
+					<p class="mr-1 text-gray-800">Адрес:</p>
 					
 					<span class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
 						
@@ -412,7 +412,7 @@
 				this.loading = true;
 				this.message = ''
 
-				fetch('https://dev3.credeo.ru/v1/lead/new-guest', {
+				fetch('https://credeo.ru/v1/lead/new-guest', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
