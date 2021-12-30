@@ -7,7 +7,7 @@
     "city": "Улан-Удэ",
     "api": "https://credeo.ru/v1/lead/new-guest",
     "credeoApi": true,
-    "source_id": "627",
+    "source_id": "630",
     "broker_id": "17",
 	"cityList": [
 		{
