@@ -7,12 +7,12 @@ feedback: true
 
 # Контакты
 
-- Наш номер телефона [{{ phone }}](tel:{{ phone }})
+- Наш номер телефона [{{ data.phone }}](tel:{{ data.phone }})
 
-- Наш [WhatsApp](https://wa.me/{{ wa }})
+- Наш [WhatsApp](https://wa.me/{{ data.wa }})
 
 - Наш адрес
-{% for item in addresses %}
+{% for item in data.addresses %}
 {% if item.mapLink %}
 	- [{{ item.address }}]({{ item.mapLink }})
 {% else %}
