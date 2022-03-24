@@ -1,25 +1,26 @@
 {
-	"phone": "83012584584",
-	"mail": "info@nationalcredit.ru",
-	"wa": "79244584584",
-	"addresses": [
-		{
-			"address": "г. Улан-Удэ, ул. Сахьяновой, д. 9",
-			"mapLink": "https://2gis.ru/ulanude/search/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D1%83%D0%BB%D0%B0%D0%BD%20%D1%83%D0%B4%D1%8D/firm/70000001006428869/107.623877%2C51.809172?m=107.623837%2C51.809189%2F16.38"
-		}
-	],
-	"aliases" : [
-		{
-			"alias": "irkutsk",
-			"phone": "+73952499090",
-			"wa": "79246090418",
-			"city": "Иркутск",
-			"addresses": [
-				{
-					"address": "г. Иркутск, ул. Горная, д. 4, офис 303-1",
-					"mapLink": "https://2gis.ru/irkutsk/search/%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D0%B8%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA/firm/1548641653471706/104.301754%2C52.279057?floor=1&m=104.301762%2C52.279064%2F18"
-				}
-			]
-		}
-	]
+  "phone": "83012584584",
+  "mail": "info@nationalcredit.ru",
+  "wa": "79244584584",
+  "addresses": [
+    {
+      "address": "г. Улан-Удэ, ул. Сахьяновой, д. 9",
+      "mapLink": "https://2gis.ru/ulanude/search/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D1%83%D0%BB%D0%B0%D0%BD%20%D1%83%D0%B4%D1%8D/firm/70000001006428869/107.623877%2C51.809172?m=107.623837%2C51.809189%2F16.38"
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "irkutsk",
+      "phone": "+73952499090",
+      "wa": "79246090418",
+      "city": "Иркутск",
+      "addresses": [
+        {
+          "address": "г. Иркутск, ул. Горная, д. 4, офис 303-1",
+          "mapLink": "https://2gis.ru/irkutsk/search/%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%20%D0%B8%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA/firm/1548641653471706/104.301754%2C52.279057?floor=1&m=104.301762%2C52.279064%2F18"
+        }
+      ],
+      "mail": "info@nationalcredit.ru"
+    }
+  ]
 }
