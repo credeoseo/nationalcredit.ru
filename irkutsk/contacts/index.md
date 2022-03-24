@@ -7,8 +7,15 @@ feedback: true
 
 # Контакты
 
-- Наш номер телефона [{{ envs.contacts.phone }}](tel:{{ envs.contacts.phone }})
+- Наш номер телефона [{{ phone }}](tel:{{ phone }})
 
-- Наш [WhatsApp](https://wa.me/{{ envs.contacts.wa }})
+- Наш [WhatsApp](https://wa.me/{{ wa }})
 
-- Наш адрес [{{ envs.contacts.address }}]({{ envs.contacts.mapLink }})
+- Наш адрес
+{% for item in addresses %}
+{% if item.mapLink %}
+	- [{{ item.address }}]({{ item.mapLink }})
+{% else %}
+	- {{ item.address }}
+{% endif %}
+{% endfor %}
