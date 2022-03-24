@@ -11,4 +11,11 @@ feedback: true
 
 - Наш [WhatsApp](https://wa.me/{{ envs.contacts.wa }})
 
-- Наш адрес [{{ envs.contacts.address }}]({{ envs.contacts.mapLink }})
+- Наш адрес
+{% for item in envs.contacts.addresses %}
+{% if item.mapLink %}
+	- [{{ item.address }}]({{ item.mapLink }})
+{% else %}
+	- {{ item.address }}
+{% endif %}
+{% endfor %}
