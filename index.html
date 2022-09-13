@@ -510,7 +510,7 @@
 					</div>
 		
 				</div>
-				<form  x-ref="form" method="POST" action="https://credeo.ru/v1/lead/new-guest" @submit.prevent="submitData">
+				<form  x-ref="form" method="POST" action="https://partner.credeo.ru/v1/lead/new-guest" @submit.prevent="submitData">
 					<div class="grid grid-rows-3 gap-2 2xs:gap-3.5 xl:gap-4.5">
 						<label class="relative grid group ">
 							<input
@@ -666,7 +666,7 @@
 				this.loading = true;
 				this.message = ''
 
-				fetch('https://credeo.ru/v1/lead/new-guest', {
+				fetch('https://partner.credeo.ru/v1/lead/new-guest', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
