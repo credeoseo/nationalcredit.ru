@@ -1,18 +1,18 @@
 {
-    "name": "Национальный Кредит",
-    "logoUrl": "/img/logo.png",
-    "faviconUrl": "/img/favicon.png",
-    "department": "MSK",
-    "wmid": "18245",
-    "city": "Улан-Удэ",
-    "api": "https://credeo.ru/v1/lead/new-guest",
-    "credeoApi": true,
-    "source_id": "630",
-    "broker_id": "17",
-	"cityList": [
-		{
-			"city": "Иркутск",
-			"cityPath": "/irkutsk/"
-		}
-	]
+  "broker_id": "17",
+  "credeoApi": true,
+  "logoUrl": "/img/logo.png",
+  "cityList": [
+    {
+      "city": "Иркутск",
+      "cityPath": "/irkutsk/"
+    }
+  ],
+  "city": "Улан-Удэ",
+  "name": "Национальный Кредит",
+  "wmid": "18245",
+  "department": "MSK",
+  "api": "https://partner.credeo.ru/v1/lead/new-guest",
+  "faviconUrl": "/img/favicon.png",
+  "source_id": "630"
 }
